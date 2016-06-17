@@ -29,6 +29,10 @@ app.post('/', bodyParser.json(), (req, res) => {
 	}
 });
 
+app.get('/', (req, res) => {
+	res.send('ready');
+});
+
 app.listen(port, () => {
 	console.log(`Listening on ${port}. Ctrl-C to stop.`);
 });
