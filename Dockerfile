@@ -5,3 +5,5 @@ ADD package.json /app/
 RUN npm install
 ADD . /app/
 ENTRYPOINT ["npm", "start"]
+ENV PORT 80
+EXPOSE 80
