@@ -1,7 +1,7 @@
 FROM vvoyer/docker-selenium-firefox-chrome
 RUN mkdir /app
 WORKDIR /app
-ENTRYPOINT ["sh", "start.sh"]
+ENTRYPOINT ["bash"]
 ENV PORT 80
 EXPOSE 80
 
