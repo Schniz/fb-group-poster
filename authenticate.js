@@ -15,12 +15,10 @@ module.exports = function authenticate(user, pass, data, cb) {
 	driver.get('https://www.facebook.com/groups/' + groupId);
 
 	var textareaCss = '[data-testid=react-composer-root] textarea';
-	driver.wait(until.elementLocated(By.css(textareaCss)));
 	driver.findElement(By.css(textareaCss)).click();
 
 	var composerCss = '[data-testid=react-composer-root] [contenteditable]';
 	var composer = () => driver.findElement(By.css(composerCss));
-	driver.wait(until.elementLocated(By.css(composerCss)));
 	composer().sendKeys(msg);
 	composer().sendKeys(webdriver.Key.RETURN);
 
