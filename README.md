@@ -42,4 +42,4 @@ we will post `hello there` to the `myFacebookGroup` group.
 
 # Thanks
 
-- @vvo for the [vvoyer/docker-selenium-firefox-chrome](https://hub.docker.com/r/vvoyer/docker-selenium-firefox-chrome/) docker image.
+- [@vvo](https://github.com/vvo) for the [vvoyer/docker-selenium-firefox-chrome](https://hub.docker.com/r/vvoyer/docker-selenium-firefox-chrome/) docker image.
