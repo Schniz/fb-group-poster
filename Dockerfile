@@ -4,6 +4,6 @@ WORKDIR /app
 ADD package.json /app/
 RUN npm install
 ADD . /app/
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["sh", "start.sh"]
 ENV PORT 80
 EXPOSE 80
