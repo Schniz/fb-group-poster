@@ -25,8 +25,8 @@ receives a body with `signed` as a jwt signed message in the format:
 
 ```json
 {
-	text: "the message to type",
-	groupId: "FACEBOOK_GROUP_OD"
+	"text": "the message to type",
+	"groupId": "FACEBOOK_GROUP_OD"
 }
 ```
 
