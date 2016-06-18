@@ -11,7 +11,7 @@ module.exports = function authenticate(user, pass, data, cb) {
 	driver.findElement(By.id('email')).sendKeys(user);
 	driver.findElement(By.id('pass')).sendKeys(pass);
 	driver.findElement(By.id('pass')).sendKeys(webdriver.Key.RETURN);
-	driver.wait(until.titleIs('Facebook'));
+	driver.wait(until.elementTextContains(driver.findElement(By.tagName('body')), 'Joe Hagever'));
 	driver.get('https://www.facebook.com/groups/' + groupId);
 
 	var textareaCss = '[data-testid=react-composer-root] textarea';
